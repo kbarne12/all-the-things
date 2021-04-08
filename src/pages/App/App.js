@@ -75,6 +75,18 @@ class App extends Component {
       },
 
     ],
+    mattsThings: [
+      {
+        name: "Michigan State Spartans",
+        image: "https://www.everythingdoormats.com/images/products/michigan-state-university-spartans-round-area-rug-44.5-inches.jpg",  
+        attributes: ["competitive", "tough", "hard working", "champions"],
+      },
+      {
+        name: "Detroit Style Deep Dish Pizza",
+        image: "https://res.cloudinary.com/culturemap-com/image/upload/ar_4:3,c_fill,g_faces:center,w_980/v1558564215/photos/294912_original.jpg",
+        attributes: ["delicious", "cheesy", "crispy crust", "not a taco"], 
+      },
+ ],
     DavidThings: [
       {
         name: "bbq",
@@ -134,7 +146,7 @@ class App extends Component {
               <a href="/the-manliest-things">Ben's Things</a><br/>
               <a href="/the-functional-things">Shahzad's Things</a><br/>
               <a href="/the-well-styled-things">David's Things</a><br/>
-               
+              <a href="/the-michigan-things">Matt's Things</a><br/>
             </>
           }
         />
@@ -150,6 +162,10 @@ class App extends Component {
         <Route 
           exact path='/the-well-styled-things'
           render={()=> <StyledThings things={this.state.davidsThings} />}
+        />
+        <Route 
+          exact path='/the-michigan-things'
+          render={()=> <StyledThings things={this.state.mattsThings} />}
         />
       </>
       
