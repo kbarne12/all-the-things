@@ -5,9 +5,29 @@ import ManliestThings from '../ManliestThings/ManliestThings'
 import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
 import KenoThings from '../KenoThings/KenoThings'
+import DavidThings from '../DavidThings/DavidThings'
+
 
 class App extends Component {
-  state = { 
+  state = {  
+    hamidsThings:[
+    {
+      name:"computer",
+      image:"",
+      attributes:["Doesn't load, stuff, everything instant"]
+    },
+    {
+      name:"Beliefs",
+      image:"",
+      attributes:["Not to get too attatched to things"]
+    },
+    {
+      name:"Skateboard",
+      image:"",
+      attributes:["I will die seeing if I can still drop in at 60","It's fun to jump"]
+    }
+  ],
+   
     bensThings: [
       { 
         name: 'banana',
@@ -73,6 +93,42 @@ class App extends Component {
         image: "https://i.imgur.com/gRxOxsA.jpg", 
         attributes: ["makes you live a long time", "consistent poops", "probably tacos sometimes!", "farm to market"], 
       },
+
+    ],
+    mattsThings: [
+      {
+        name: "Michigan State Spartans",
+        image: "https://www.everythingdoormats.com/images/products/michigan-state-university-spartans-round-area-rug-44.5-inches.jpg",  
+        attributes: ["competitive", "tough", "hard working", "champions"],
+      },
+      {
+        name: "Detroit Style Deep Dish Pizza",
+        image: "https://res.cloudinary.com/culturemap-com/image/upload/ar_4:3,c_fill,g_faces:center,w_980/v1558564215/photos/294912_original.jpg",
+        attributes: ["delicious", "cheesy", "crispy crust", "not a taco"], 
+      },
+ ],
+    DavidThings: [
+      {
+        name: "bbq",
+        image: "https://i.imgur.com/GwgAEzP.jpg",  
+        attributes: ["meat", "picanha", "churrasco", "sirloin cap"],
+      },
+      {
+        name: "tiger",
+        image: "https://i.imgur.com/GleAY3f.jpeg",  
+        attributes: ["beautiful", "stripes", "fun", "animal", "(David acually own a tiger)"], 
+      },
+      {
+        name: "Surf",
+        image: "https://im-1.msw.ms/eengine/ce_images/eedfdb7c6f2cb918/DSC_660031ArlonFonmosa_960_640_s.jpg",  
+        attributes: ["ocean", "barrel", "salt life", "sport"], 
+      },
+      {
+        name: "Race Car",
+        image: "https://car-images.bauersecure.com/pagefiles/68136/1056x594/zpor-004.jpg",  
+        attributes: ["race", "Porsche", "IMSA", "911"], 
+      },
+  
     ], 
     kenoThings: [
       {
@@ -96,6 +152,7 @@ class App extends Component {
         attributes: ["smart", "funny", "gentle", "witty"], 
       }, 
     ],
+
   } 
   render() {
     return (
@@ -109,8 +166,12 @@ class App extends Component {
               <a href="/the-manliest-things">Ben's Things</a><br/>
               <a href="/the-functional-things">Shahzad's Things</a><br/>
               <a href="/the-well-styled-things">David's Things</a><br/>
-              <a href="/keno-things">Kentdrick's Things</a><br/>
+
+              <a href="/the-keno-things">Kentdrick's Things</a><br/>
                
+
+              <a href="/the-michigan-things">Matt's Things</a><br/>
+
             </>
           }
         />
@@ -128,8 +189,13 @@ class App extends Component {
           render={()=> <StyledThings things={this.state.davidsThings} />}
         />
         <Route 
-          exact path='/keno-things'
+          exact path='/the-keno-things'
           render={()=> <KenoThings things={this.state.kenoThings} />}
+          />
+        <Route
+          exact path='/the-michigan-things'
+          render={()=> <StyledThings things={this.state.mattsThings} />}
+
         />
       </>
       
