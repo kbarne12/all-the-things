@@ -4,6 +4,7 @@ import './App.css';
 import ManliestThings from '../ManliestThings/ManliestThings'
 import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
+import KenoThings from '../KenoThings/KenoThings'
 
 class App extends Component {
   state = { 
@@ -108,6 +109,7 @@ class App extends Component {
               <a href="/the-manliest-things">Ben's Things</a><br/>
               <a href="/the-functional-things">Shahzad's Things</a><br/>
               <a href="/the-well-styled-things">David's Things</a><br/>
+              <a href="/keno-things">Kentdrick's Things</a><br/>
                
             </>
           }
@@ -124,6 +126,10 @@ class App extends Component {
         <Route 
           exact path='/the-well-styled-things'
           render={()=> <StyledThings things={this.state.davidsThings} />}
+        />
+        <Route 
+          exact path='/keno-things'
+          render={()=> <KenoThings things={this.state.kenoThings} />}
         />
       </>
       
