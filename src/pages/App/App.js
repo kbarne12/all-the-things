@@ -6,7 +6,25 @@ import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
 
 class App extends Component {
-  state = { 
+  state = {  
+    hamidsThings:[
+    {
+      name:"computer",
+      image:"",
+      attributes:["Doesn't load, stuff, everything instant"]
+    },
+    {
+      name:"Beliefs",
+      image:"",
+      attributes:["Not to get too attatched to things"]
+    },
+    {
+      name:"Skateboard",
+      image:"",
+      attributes:["I will die seeing if I can still drop in at 60","It's fun to jump"]
+    }
+  ],
+   
     bensThings: [
       { 
         name: 'banana',
