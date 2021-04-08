@@ -4,6 +4,7 @@ import './App.css';
 import ManliestThings from '../ManliestThings/ManliestThings'
 import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
+import DavidThings from '../DavidThings/DavidThings'
 
 class App extends Component {
   state = { 
@@ -72,6 +73,30 @@ class App extends Component {
         image: "https://i.imgur.com/gRxOxsA.jpg", 
         attributes: ["makes you live a long time", "consistent poops", "probably tacos sometimes!", "farm to market"], 
       },
+
+    ],
+    DavidThings: [
+      {
+        name: "bbq",
+        image: "https://i.imgur.com/GwgAEzP.jpg",  
+        attributes: ["meat", "picanha", "churrasco", "sirloin cap"],
+      },
+      {
+        name: "tiger",
+        image: "https://i.imgur.com/GleAY3f.jpeg",  
+        attributes: ["beautiful", "stripes", "fun", "animal", "(David acually own a tiger)"], 
+      },
+      {
+        name: "Surf",
+        image: "https://im-1.msw.ms/eengine/ce_images/eedfdb7c6f2cb918/DSC_660031ArlonFonmosa_960_640_s.jpg",  
+        attributes: ["ocean", "barrel", "salt life", "sport"], 
+      },
+      {
+        name: "Race Car",
+        image: "https://car-images.bauersecure.com/pagefiles/68136/1056x594/zpor-004.jpg",  
+        attributes: ["race", "Porsche", "IMSA", "911"], 
+      },
+  
     ], 
     kenoThings: [
       {
@@ -95,6 +120,7 @@ class App extends Component {
         attributes: ["smart", "funny", "gentle", "witty"], 
       },
     ],
+
   } 
   render() {
     return (
