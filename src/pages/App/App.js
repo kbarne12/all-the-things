@@ -73,6 +73,7 @@ class App extends Component {
         image: "https://i.imgur.com/gRxOxsA.jpg", 
         attributes: ["makes you live a long time", "consistent poops", "probably tacos sometimes!", "farm to market"], 
       },
+
     ],
     DavidThings: [
       {
@@ -95,7 +96,31 @@ class App extends Component {
         image: "https://car-images.bauersecure.com/pagefiles/68136/1056x594/zpor-004.jpg",  
         attributes: ["race", "Porsche", "IMSA", "911"], 
       },
+  
     ], 
+    kenoThings: [
+      {
+        name: "crab cakes",
+        image: "https://i.imgur.com/Nt24dqV.jpg",  
+        attributes: ["tasty", "fluffy", "lumpy", "yummy"],
+      },
+      {
+        name: "xxl bully",
+        image: "https://i.imgur.com/jZP0BJk.jpg",  
+        attributes: ["huge", "cool", "fun", "animal", "smart"], 
+      },
+      {
+        name: "Zeke",
+        image: "https://i.imgur.com/ktmxjhS.jpg",  
+        attributes: ["fast", "happy", "friendly", "hyper"], 
+      },
+      {
+        name: "Manu",
+        image: "https://i.imgur.com/CP8H6kD.jpg",  
+        attributes: ["smart", "funny", "gentle", "witty"], 
+      },
+    ],
+
   } 
   render() {
     return (
