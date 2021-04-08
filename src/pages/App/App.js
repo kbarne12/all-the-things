@@ -93,7 +93,7 @@ class App extends Component {
         name: "Manu",
         image: "https://i.imgur.com/CP8H6kD.jpg",  
         attributes: ["smart", "funny", "gentle", "witty"], 
-      },
+      }, 
     ],
   } 
   render() {
