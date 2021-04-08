@@ -4,7 +4,9 @@ import './App.css';
 import ManliestThings from '../ManliestThings/ManliestThings'
 import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
+import KenoThings from '../KenoThings/KenoThings'
 import DavidThings from '../DavidThings/DavidThings'
+
 
 class App extends Component {
   state = {  
@@ -148,7 +150,7 @@ class App extends Component {
         name: "Manu",
         image: "https://i.imgur.com/CP8H6kD.jpg",  
         attributes: ["smart", "funny", "gentle", "witty"], 
-      },
+      }, 
     ],
 
   } 
@@ -164,7 +166,12 @@ class App extends Component {
               <a href="/the-manliest-things">Ben's Things</a><br/>
               <a href="/the-functional-things">Shahzad's Things</a><br/>
               <a href="/the-well-styled-things">David's Things</a><br/>
+
+              <a href="/the-keno-things">Kentdrick's Things</a><br/>
+               
+
               <a href="/the-michigan-things">Matt's Things</a><br/>
+
             </>
           }
         />
@@ -182,8 +189,13 @@ class App extends Component {
           render={()=> <StyledThings things={this.state.davidsThings} />}
         />
         <Route 
+          exact path='/the-keno-things'
+          render={()=> <KenoThings things={this.state.kenoThings} />}
+          />
+        <Route
           exact path='/the-michigan-things'
           render={()=> <StyledThings things={this.state.mattsThings} />}
+
         />
       </>
       
